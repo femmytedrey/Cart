@@ -23,12 +23,12 @@ const AppProvider = ({ children }) => {
   const remove = (id) => {
     dispatch({ type: 'REMOVE', payload: id })
   }
-  const increase = (id) => {
-    dispatch({ type: 'INCREASE', payload: id})
-  }
-  const decrease = (id) => {
-    dispatch({ type: 'DECREASE', payload: id})
-  }
+  // const increase = (id) => {
+  //   dispatch({ type: 'INCREASE', payload: id})
+  // }
+  // const decrease = (id) => {
+  //   dispatch({ type: 'DECREASE', payload: id})
+  // }
 
   const fetchData = async () => {
     dispatch({ type: 'LOADING' });
@@ -56,8 +56,8 @@ const AppProvider = ({ children }) => {
         ...state,
         clearCart,
         remove,
-        increase,
-        decrease,
+        // increase,
+        // decrease,
         toggleAmount,
       }}
     >
